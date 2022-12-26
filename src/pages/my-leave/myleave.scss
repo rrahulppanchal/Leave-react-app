@@ -1,0 +1,152 @@
+@import "../../styles.scss";
+.myleave {
+  color: #dcd7c9;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+  hr {
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 5px solid #dcd7c9;
+  }
+  h2 {
+    font-size: 20px;
+    padding: 7px 15px;
+    width: fit-content;
+    margin: 20px 0;
+    transition: 0.3s ease-in;
+    border: 1px solid #3ea6ff;
+    border-radius: 3px;
+    @include mobile {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    &:hover {
+      background-color: #3ea5ff28;
+    }
+  }
+  .page-titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a27b5c;
+    padding: 15px;
+    border-top: 1px solid #dcd7c9;
+    border-bottom: 1px solid #dcd7c9;
+    margin-bottom: 10px;
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      width: 20%;
+      @include mobile {
+        font-size: 10px;
+        font-weight: 500;
+      }
+    }
+  }
+  .leave-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-top: 1px solid #dcd7c9;
+    border-bottom: 1px solid #dcd7c9;
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      width: 20%;
+      text-align: center;
+      gap: 5px;
+      @include mobile {
+        font-size: 8px;
+      }
+      .leave-dates {
+        font-size: 13px;
+        @include mobile {
+          font-size: 8px;
+        }
+        p {
+          span {
+            background-color: transparent;
+            font-size: 12px;
+            @include mobile {
+              font-size: 8px;
+            }
+          }
+        }
+      }
+      h3 {
+        background-color: #a27b5c;
+        width: fit-content;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 400;
+        margin: auto;
+        @include mobile {
+          font-size: 8px;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+  .leave-data:nth-child(2n + 1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f4e4f;
+    padding: 15px;
+    border-top: 1px solid #dcd7c9;
+    border-bottom: 1px solid #dcd7c9;
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      width: 20%;
+      text-align: center;
+      @include mobile {
+        font-size: 8px;
+      }
+      .leave-dates {
+        font-size: 13px;
+        @include mobile {
+          font-size: 8px;
+        }
+        p {
+          span {
+            background-color: transparent;
+            font-size: 12px;
+            color: #dcd7c9;
+            @include mobile {
+              font-size: 8px;
+            }
+          }
+        }
+      }
+      h3 {
+        background-color: #a27b5c;
+        width: fit-content;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 400;
+        margin: auto;
+        @include mobile {
+          font-size: 8px;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}
