@@ -17,6 +17,10 @@ const router = createBrowserRouter([
     element: <Register />,
   },
   {
+    path: "/",
+    element: <MyLeave />,
+  },
+  {
     path: "/my-leaves/:id",
     element: <MyLeave />,
   },
