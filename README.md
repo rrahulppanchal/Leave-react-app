@@ -1,2 +1,2 @@
 ## Clone
-git clone https://gitadddress.com
+Hosted on: https://tubular-donut-74e2cf.netlify.app/
